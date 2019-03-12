@@ -1,0 +1,32 @@
+
+package newpackage;
+
+import java.util.Scanner;
+
+public class NewClass {
+    
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        
+        int idade;
+        
+        System.out.print("Digite o Seu a Sua Idade: ");
+        idade = Integer.parseInt(input.nextLine());
+        
+        if(idade >= 18 && idade < 65){
+            System.out.println( "Você é Maior de Idade");
+            System.out.println( "E o Seu Voto é Obrigatorio");
+        } else{
+             if(idade >= 16 && idade < 18){
+                  System.out.println( "Você é Menor de Idade");
+                  System.out.print( "E o Seu Voto é Facultativo");
+              } else{ 
+                  if(idade >= 65){
+                        System.out.println( "Você é Maior de Idade");
+                        System.out.println( "E Seu Voto é Facultativo");
+                   }
+                }
+    
+          }
+    }
+}

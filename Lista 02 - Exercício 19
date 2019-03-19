@@ -1,0 +1,23 @@
+package newpackage;
+
+import java.util.Scanner;
+
+public class NewClass {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        
+        String nome1, nome2;
+        
+        System.out.print("Digite o 1° Nome: ");
+        nome1 = input.nextLine();
+        
+        System.out.print("Digite o 2° Nome: ");
+        nome2 = input.nextLine();
+        
+        if(nome1.toLowerCase().equals(nome2.toLowerCase()))
+            System.out.println("Os Nomes São Iguais");
+        
+        else
+            System.out.println("Os Nomes São Diferentes");
+    }
+}

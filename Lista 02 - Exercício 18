@@ -1,47 +1,41 @@
 package newpackage;
-
 import java.util.Scanner;
-
 public class NewClass {
+
     public static void main(String[] args){
+    
         Scanner input = new Scanner(System.in);
-        
         float num1, num2, operac1;
         String operac2;
-        
+	
         System.out.print("Digite o 1° Numero: ");
         num1 = input.nextFloat();
-        
+	
         System.out.print("Digite o 2° Numero: ");
         num2 = input.nextFloat();
-        
+	
         System.out.print("Digite a Operação Desejada (+ , - , / ou *): ");
         operac2 = input.next();
-        
+	
         if (operac2.equals("+")){
-
             operac1 = (num1 + num2);
-            System.out.println(operac1);
-        }else
-         if (operac2.equals("-")){
-             
-             operac1 = (num1 - num2);
-            System.out.println(operac1);
-         }else
-         if (operac2.equals("/")){
-
+            System.out.println("O Resultado é: " + operac1);
+	    
+        }else if (operac2.equals("-")){
+            operac1 = (num1 - num2);
+            System.out.println("O Resultado é: " + operac1);
+	    
+        }else if (operac2.equals("/")){
             operac1 = (num1 / num2);
-            System.out.println(operac1);
-         }else
-         if (operac2.equals("*")){
-
+            System.out.println("O Resultado é: " + operac1);
+	    
+        }else if (operac2.equals("*")){
             operac1 = (num1 * num2);
-            System.out.println(operac1);
-         }else
-         if (!operac2.equals("+") && !operac2.equals("-") && 
-                 !operac2.equals("/") && !operac2.equals("*")){
-
+            System.out.println("O Resultado é: " + operac1);
+	    
+        }else if (!operac2.equals("+") && !operac2.equals("-") && 
+            !operac2.equals("/") && !operac2.equals("*")){
             System.out.println("Operação Inválida,");
-         }
+        }
     }
 }

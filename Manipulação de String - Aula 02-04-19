@@ -1,0 +1,37 @@
+package javaapplication1;
+
+import java.util.Scanner;
+public class JavaApplication1 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        String email, nome;
+        
+        email = "aaaaaa@GMAIL.com";
+        // Verifica se a String contem algo
+        System.out.println(email.toLowerCase().contains("gmail"));
+        
+        nome = "jose da silva";
+        // Verifica se a String começa com algo
+        System.out.println(nome.startsWith("jose"));
+        
+        nome = "jose da silva";
+        // Verifica se a String termina com algo
+        System.out.println(nome.endsWith("silva"));
+        
+        email = "bbbbb@gmail.com";
+        // Troca o conteudo de uma String e imprime
+        System.out.println(email.replace("b","a"));
+        
+        // Retorna o comprimento de uma String
+        System.out.println(email.length());
+        
+        nome = "Francisco José da Silva";
+        // Retorna uma parte da String
+        System.out.println(nome.substring(0, 9));
+        System.out.println(nome.substring(10, 14));
+        
+    }
+    
+}

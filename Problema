@@ -1,0 +1,35 @@
+package javaapplication6;
+import java.util.Scanner;
+public class JavaApplication6 {
+
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        String nome, email, senha, cript;
+        int anoNasc, idade;
+        
+        System.out.println("Digite o Seu Nome Completo: ");
+        nome = input.nextLine();
+        
+        System.out.println("Digite o Seu Ano De Nascimento: ");
+        anoNasc = Integer.parseInt(input.nextLine());
+                            
+        System.out.println("Digite o Seu email: ");
+        email = input.nextLine();
+        
+        System.out.println("Digite a Sua Senha: ");
+        senha = input.nextLine();
+        
+        System.out.println("Digite a Sua Idade: ");
+        idade = input.nextInt();
+        
+        cript = senha.substring(0,3) + idade + nome.toUpperCase().substring(0,5) + anoNasc + 
+                senha.substring(3) + nome.toLowerCase().substring(nome.length() - 5);
+
+        System.out.println(cript.replace("a", "@"));
+        
+        
+    }
+    
+}

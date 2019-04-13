@@ -1,0 +1,10 @@
+package newpackage;
+
+public class NewClass {
+     public static void main(String[] args){
+         
+         String frase = "Estudar programação é legal!";
+         
+         System.out.print(frase);
+         }
+}

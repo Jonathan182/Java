@@ -1,0 +1,23 @@
+package javaapplication6;
+import java.util.Scanner;
+
+public class JavaApplication6 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        String a = "";
+        int lado, i;
+       
+        System.out.print("Digite o Tamanho do Lado de um Quadrado: ");
+        lado = input.nextInt();
+  
+        for(i=0; i< lado; i++){
+           a += "*";
+        }
+        
+        for(i=0; i< lado; i++){
+            System.out.println(a);
+        }
+    }
+}

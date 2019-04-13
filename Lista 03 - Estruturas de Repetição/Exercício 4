@@ -1,0 +1,17 @@
+package javaapplication6;
+import java.util.Scanner;
+
+public class JavaApplication6 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        int s, a1 = 0, a2 = 9, n = 10;
+        
+        // s: soma dos n termos ; a1: primeiro termo ; a2: segundo termo ; n: numero de termos
+        
+        s = (a1 + a2) * n / 2;
+        
+        System.out.print("A Soma Dos 10 Primeiros Números é: " + s);
+    }
+}

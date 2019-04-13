@@ -1,0 +1,29 @@
+package javaapplication6;
+import java.util.Scanner;
+
+
+public class JavaApplication6 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        // Impar %  = 1
+        
+        int num, i, mod;
+        
+        System.out.print("Digite Um Número Inteiro: ");
+        num = input.nextInt();
+        
+        System.out.println("Os Números Pares Até " + num +" São:");
+        
+        for(i = 0; i <= num; i++ ){
+            
+            mod = i % 2;
+            
+            if(mod == 0){
+                
+                System.out.println("Número: " + i);
+            }
+        }
+    }
+}

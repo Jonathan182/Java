@@ -1,0 +1,24 @@
+package javaapplication6;
+import java.util.Scanner;
+
+public class JavaApplication6 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+       int i, num, maior = 0;
+       
+       System.out.println("Digite 10 Números Inteiros");
+       
+       for (i=0; i<10; i++){
+           
+           System.out.print("Digite o " + (i+1) + " Número: ");
+           num = input.nextInt();
+           
+           if(num > maior)
+               
+               maior = num;
+        }
+           System.out.print("O maior Número Digitado é: " + maior);
+    }
+}

@@ -1,0 +1,30 @@
+package javaapplication6;
+import java.util.Scanner;
+
+
+public class JavaApplication6 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        int num,num2,resto,numInv=0;
+        
+        System.out.print("Digite Um Número: ");
+        num = input.nextInt();
+        num2=num;
+        
+        while(num>0){
+            
+            resto=num%10;
+            num=num/10;
+            numInv=numInv*10+resto;
+        }
+        if(num2 == numInv){
+            
+            System.out.print("O numero " + num2 + " é um Capicua");
+        }
+        else{
+            System.out.print("O numero " + num2 + " Não é um Capicua");
+        }
+    }
+}

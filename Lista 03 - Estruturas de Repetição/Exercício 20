@@ -1,0 +1,59 @@
+package javaapplication7;
+import java.util.Scanner;
+
+public class JavaApplication7 {
+    public static void main(String[] args) {
+       
+        Scanner input = new Scanner(System.in);
+        
+        String sexo [] = new String [5];
+        int idade [] = new int [5];
+        int idadeM=0, i, pessF=0, pessM=0;
+        
+        System.out.println("Cadastro do Sexo e Idade de 5 Pessoas.");
+        
+        for(i=0; i<5; i++){
+            
+            System.out.print("Digite o Sexo (m - masculino ou f - feminino): ");
+            sexo[i] = input.nextLine();
+ 
+            System.out.print("Digite a Idade: ");
+            idade[i] = Integer.parseInt(input.nextLine());
+        
+            System.out.println();
+        
+            if(idade [i] == 0){
+                break;
+            }
+        }
+        
+        for(i=0; i<5; i++){
+            
+            idadeM += idade[i];
+        }
+        
+        System.out.println("A Idade Média Dos Indivíduo é: " + idadeM/5 + " Anos");
+        
+        for(i=0; i<5; i++){
+            
+            if(sexo[i].toLowerCase().equals("f") && idade[i] >=20 && idade[i]<=30){
+            
+            pessF ++;
+            
+            }
+        }
+        
+        System.out.println("O Total de Pessoas do Sexo Feminino Com Idade Entre 20 e 30 Anos é: " + pessF);
+        
+        for(i=0; i<5; i++){
+            
+            if(sexo[i].toLowerCase().equals("m")){
+                
+            pessM ++;
+            
+            }
+        }
+        
+        System.out.println("O Total de Pessoas do Sexo Masculino é: " + pessM);   
+    }
+}
